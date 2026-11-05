@@ -65,121 +65,132 @@ const SITE = {
   },
 
   projects: {
-    title: "Featured Projects",
-    subtitle: "Production-grade applications demonstrating full-stack expertise",
+    title: "Projects",
+    subtitle: "A place for projects I can personally share.",
+    emptyState: "I'm preparing projects to share here. Check back soon.",
     featuresLabel: "Key Features",
     repoLabel: "View Repository",
     liveLabel: "Live Website",
-    items: [
-      {
-        title: "HR & Recruitment Management Suite",
-        description:
-          "Enterprise-grade platform unifying employee management, attendance tracking, and AI‑powered recruitment. Features role‑based panels (Admin/Employee), check‑in/out with working hours calculation, leave management with history, payslip generation, job assignment tracking, and a complete resume management system with AI‑based parsing, advanced search filters, interactive dashboards, and candidate status tracking.",
-        features: [
-          "Role‑based access control (Admin/Employee)",
-          "Attendance: check‑in/out, late tracking, working hours, Excel export",
-          "Leave management: apply, history, balance tracking",
-          "Payroll: payslip records and summaries",
-          "Job assignments: track assigned roles and responsibilities",
-          "AI‑powered resume extraction & auto‑fill",
-          "Resume search: keyword, experience, location filters",
-          "Analytics dashboards: status overview (selected/pending/not selected) with pie charts",
-          "Export Excel & candidate remark tracking",
-        ],
-        tech: [
-          "React.js",
-          "Node.js",
-          "Express.js",
-          "MongoDB",
-          "MySQL",
-          "ChatGPT APIs",
-          "Material UI",
-          "Recharts",
-        ],
-        repo: "",
-        live: "",
-      },
-      {
-        title: "Job Spiders – Job Platform",
-        description:
-          "Full‑featured job portal connecting candidates and employers. Includes job search with filters, detailed job pages, candidate dashboard with profile and resume management, application tracking, and employer tools for posting jobs and managing applicants.",
-        features: [
-          "50 lakh+ job listings across industries",
-          "Advanced search with filters (keyword, location, category)",
-          "Candidate dashboard: profile, resume upload, job alerts",
-          "Application tracking with status (approved, pending, rejected)",
-          "Employer side: post jobs, access verified talent pool",
-          "Hiring guarantee (qualified candidates within 72 hours)",
-          "Responsive UI with user ratings & testimonials",
-        ],
-        tech: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Authentication"],
-        repo: "https://github.com/Rohan2519Y/Portfolio-Website",
-        live: "https://jobspiders.com",
-      },
-      {
-        title: "Telegram Cloud Storage",
-        description:
-          "A full-stack cloud storage application that uses Telegram channels as a backend storage engine. Upload, organize, and stream files of any size through a clean web interface, with real-time upload progress, folder management, and secure JWT-based authentication.",
-        features: [
-          "Unlimited storage via Telegram channels as backend",
-          "Real-time upload progress with SSE (Server-Sent Events)",
-          "Drag & drop file uploads with cancel support",
-          "Folder management with nested folder navigation",
-          "Inline file renaming without popups",
-          "Image thumbnail previews in grid and list view",
-          "Channel sync — auto-detects admin channels from Telegram",
-        ],
-        tech: [
-          "Next.js",
-          "Node.js",
-          "Express.js",
-          "MySQL",
-          "Telegram MTProto API",
-          "@mtcute/node",
-          "JWT Authentication",
-        ],
-        repo: "https://github.com/Rohan2519Y/Cloud-Storage",
-        live: "https://telegramcloudstorage.vercel.app",
-      },
-      {
-        title: "Attendance Web/Mobile App",
-        description:
-          "Employee attendance tracking application with check-in/check-out functionality, working hours calculation, late tracking, and monthly summaries. Available as both web and mobile app.",
-        features: [
-          "Check-in/Check-out system",
-          "Hours calculation",
-          "Late tracking",
-          "Monthly reports",
-        ],
-        tech: ["React.js", "React Native", "Node.js", "MySQL", "Bootstrap"],
-        repo: "",
-        live: "",
-      },
-      {
-        title: "SalesBuddy",
-        description:
-          "Marketplace for second-hand mobiles and laptops with integrated payment gateways and SMS notifications. Features responsive UI with Redux state management.",
-        features: [
-          "Payment integration",
-          "SMS notifications",
-          "Responsive design",
-          "State management",
-        ],
-        tech: ["React.js", "Material UI", "Redux", "REST APIs", "Payment Gateways"],
-        repo: "https://github.com/Rohan2519Y/Sales-Buddy",
-        live: "",
-      },
-      {
-        title: "Electronics E-commerce App",
-        description:
-          "Full-featured e-commerce application built with React Native, Node.js, and Express.js. Includes secure authentication, third-party integrations, and asynchronous storage.",
-        features: ["Cross-platform", "Secure auth", "Third-party integration", "Local storage"],
-        tech: ["React Native", "Node.js", "Express.js", "Async Storage"],
-        repo: "https://github.com/Rohan2519Y/electronicsapp",
-        live: "",
-      },
-    ],
+    items: [],
   },
+
+
+  // projects: {
+  //   title: "Featured Projects",
+  //   subtitle: "Production-grade applications demonstrating full-stack expertise",
+  //   featuresLabel: "Key Features",
+  //   repoLabel: "View Repository",
+  //   liveLabel: "Live Website",
+  //   items: [
+      // {
+      //   title: "HR & Recruitment Management Suite",
+      //   description:
+      //     "Enterprise-grade platform unifying employee management, attendance tracking, and AI‑powered recruitment. Features role‑based panels (Admin/Employee), check‑in/out with working hours calculation, leave management with history, payslip generation, job assignment tracking, and a complete resume management system with AI‑based parsing, advanced search filters, interactive dashboards, and candidate status tracking.",
+      //   features: [
+      //     "Role‑based access control (Admin/Employee)",
+      //     "Attendance: check‑in/out, late tracking, working hours, Excel export",
+      //     "Leave management: apply, history, balance tracking",
+      //     "Payroll: payslip records and summaries",
+      //     "Job assignments: track assigned roles and responsibilities",
+      //     "AI‑powered resume extraction & auto‑fill",
+      //     "Resume search: keyword, experience, location filters",
+      //     "Analytics dashboards: status overview (selected/pending/not selected) with pie charts",
+      //     "Export Excel & candidate remark tracking",
+      //   ],
+      //   tech: [
+      //     "React.js",
+      //     "Node.js",
+      //     "Express.js",
+      //     "MongoDB",
+      //     "MySQL",
+      //     "ChatGPT APIs",
+      //     "Material UI",
+      //     "Recharts",
+      //   ],
+      //   repo: "",
+      //   live: "",
+      // },
+      // {
+      //   title: "Job Spiders – Job Platform",
+      //   description:
+      //     "Full‑featured job portal connecting candidates and employers. Includes job search with filters, detailed job pages, candidate dashboard with profile and resume management, application tracking, and employer tools for posting jobs and managing applicants.",
+      //   features: [
+      //     "50 lakh+ job listings across industries",
+      //     "Advanced search with filters (keyword, location, category)",
+      //     "Candidate dashboard: profile, resume upload, job alerts",
+      //     "Application tracking with status (approved, pending, rejected)",
+      //     "Employer side: post jobs, access verified talent pool",
+      //     "Hiring guarantee (qualified candidates within 72 hours)",
+      //     "Responsive UI with user ratings & testimonials",
+      //   ],
+      //   tech: ["React.js", "Node.js", "Express.js", "MongoDB", "REST APIs", "JWT Authentication"],
+      //   repo: "https://github.com/Rohan2519Y/Portfolio-Website",
+      //   live: "https://jobspiders.com",
+      // },
+      // {
+      //   title: "Telegram Cloud Storage",
+      //   description:
+      //     "A full-stack cloud storage application that uses Telegram channels as a backend storage engine. Upload, organize, and stream files of any size through a clean web interface, with real-time upload progress, folder management, and secure JWT-based authentication.",
+      //   features: [
+      //     "Unlimited storage via Telegram channels as backend",
+      //     "Real-time upload progress with SSE (Server-Sent Events)",
+      //     "Drag & drop file uploads with cancel support",
+      //     "Folder management with nested folder navigation",
+      //     "Inline file renaming without popups",
+      //     "Image thumbnail previews in grid and list view",
+      //     "Channel sync — auto-detects admin channels from Telegram",
+      //   ],
+      //   tech: [
+      //     "Next.js",
+      //     "Node.js",
+      //     "Express.js",
+      //     "MySQL",
+      //     "Telegram MTProto API",
+      //     "@mtcute/node",
+      //     "JWT Authentication",
+      //   ],
+      //   repo: "https://github.com/Rohan2519Y/Cloud-Storage",
+      //   live: "https://telegramcloudstorage.vercel.app",
+      // },
+      // {
+      //   title: "Attendance Web/Mobile App",
+      //   description:
+      //     "Employee attendance tracking application with check-in/check-out functionality, working hours calculation, late tracking, and monthly summaries. Available as both web and mobile app.",
+      //   features: [
+      //     "Check-in/Check-out system",
+      //     "Hours calculation",
+      //     "Late tracking",
+      //     "Monthly reports",
+      //   ],
+      //   tech: ["React.js", "React Native", "Node.js", "MySQL", "Bootstrap"],
+      //   repo: "",
+      //   live: "",
+      // },
+      // {
+      //   title: "SalesBuddy",
+      //   description:
+      //     "Marketplace for second-hand mobiles and laptops with integrated payment gateways and SMS notifications. Features responsive UI with Redux state management.",
+      //   features: [
+      //     "Payment integration",
+      //     "SMS notifications",
+      //     "Responsive design",
+      //     "State management",
+      //   ],
+      //   tech: ["React.js", "Material UI", "Redux", "REST APIs", "Payment Gateways"],
+      //   repo: "https://github.com/Rohan2519Y/Sales-Buddy",
+      //   live: "",
+      // },
+      // {
+      //   title: "Electronics E-commerce App",
+      //   description:
+      //     "Full-featured e-commerce application built with React Native, Node.js, and Express.js. Includes secure authentication, third-party integrations, and asynchronous storage.",
+      //   features: ["Cross-platform", "Secure auth", "Third-party integration", "Local storage"],
+      //   tech: ["React Native", "Node.js", "Express.js", "Async Storage"],
+      //   repo: "https://github.com/Rohan2519Y/electronicsapp",
+      //   live: "",
+      // },
+  //   ],
+  // },
 
   experience: {
     title: "Professional Experience",
