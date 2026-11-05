@@ -37,36 +37,59 @@ A responsive personal portfolio built with plain **HTML, CSS and JavaScript**, w
 └── .env.example        Example environment variables
 ```
 
+
 ## Getting Started
 
-### 1. Clone and install
+Follow these steps to run the portfolio on your computer.
+
+### 1. Download the project
+
+Download the repository from GitHub and extract the ZIP file.
+
+Open the project folder in VS Code.
+
+### 2. Install dependencies
+
+Open the VS Code terminal and run:
 
 ```bash
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
 npm install
 ```
 
-### 2. Add your Gmail details
+### 3. Set up email
 
-Copy `.env.example` to `.env` and fill it in:
+Create a file named `.env` in the main project folder.
 
+Add your Gmail details:
+
+```env
+EMAIL_USER=your-email@gmail.com
+EMAIL_PASSWORD=your-gmail-app-password
+CONTACT_TO=your-email@gmail.com
 ```
-EMAIL_USER=yourname@gmail.com
-EMAIL_PASSWORD=your-16-letter-app-password              # Keep the spaces
-CONTACT_TO=yourname@gmail.com   # optional, where messages are delivered
-```
 
-`EMAIL_PASSWORD` must be a Gmail **App Password** (Google Account > Security > 2-Step Verification > App passwords), not your normal password. Never commit the `.env` file.
+Use a Gmail App Password instead of your regular Gmail password.
 
-### 3. Run locally
+Keep your `.env` file private. Never upload it to GitHub.
+
+### 4. Run the website
+
+Install Vercel CLI:
 
 ```bash
-npm i -g vercel
+npm install -g vercel
+```
+
+Then start the project:
+
+```bash
 vercel dev
 ```
 
-Open http://localhost:3000. Opening `index.html` directly shows the page, but the contact form needs `vercel dev` to send email.
+Open **http://localhost:3000** in your browser.
+
+That's it! Your portfolio is running locally.
+
 
 ## Customize
 
