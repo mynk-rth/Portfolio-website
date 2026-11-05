@@ -53,7 +53,7 @@ Copy `.env.example` to `.env` and fill it in:
 
 ```
 EMAIL_USER=yourname@gmail.com
-EMAIL_PASSWORD=your-16-letter-app-password
+EMAIL_PASSWORD=your-16-letter-app-password              # Keep the spaces
 CONTACT_TO=yourname@gmail.com   # optional, where messages are delivered
 ```
 
