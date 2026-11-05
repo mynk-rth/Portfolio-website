@@ -1,27 +1,54 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="en" class="dark">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
     <title>Portfolio</title>
-    <meta name="description" content="" />
-    <link rel="icon" href="assets/portfoliologo.png" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
+
+    <meta name="description" content="">
+
+    <link rel="icon" href="assets/portfoliologo.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
-      href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <link rel="stylesheet" href="style.css" />
+        href="https://fonts.googleapis.com/css2?family=Geist:wght@400;500;600;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Load saved theme preference -->
     <script>
-      try {
-        if (localStorage.getItem("theme") === "light") document.documentElement.classList.remove("dark");
-      } catch (e) {}
+        try {
+            if (localStorage.getItem("theme") === "light") {
+                document.documentElement.classList.remove("dark");
+            }
+        } catch (error) {
+            // Continue with the default dark theme.
+        }
     </script>
-  </head>
-  <body>
-    <button id="theme-toggle" class="theme-toggle" aria-label="Toggle theme"></button>
+</head>
+
+<body>
+
+    <!-- Theme Toggle Button -->
+    <button
+        id="theme-toggle"
+        class="theme-toggle"
+        aria-label="Toggle theme"
+    ></button>
+
+    <!-- Website Content -->
     <main id="app"></main>
+
+    <!-- Website Data and JavaScript -->
     <script src="data.js"></script>
     <script src="script.js"></script>
-  </body>
+
+</body>
 </html>
