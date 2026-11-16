@@ -39,7 +39,9 @@ const SITE = {
         phone: "+91 9131637561",
         phoneLink: "+919131637561",
         github: "https://github.com/mynk-rth",
+        leetcode: "https://leetcode.com/u/mynk-rth/",
         linkedin: "https://linkedin.com/in/mynk-rth",
+        instagram: "https://www.instagram.com/mynk.rth/",
     },
 
 
@@ -62,7 +64,7 @@ const SITE = {
             {
                 label: "Experience",
                 big: "10+ Months",
-                text: "Years of professional development experience",
+                text: "Months of hands-on development experience",
             },
             {
                 label: "Education",
